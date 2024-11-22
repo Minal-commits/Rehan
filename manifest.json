@@ -1,0 +1,21 @@
+{
+    "name":"Rehan",
+    "version":"0.1.0",
+    "description": "Rehan is an AI bot in your browser",
+    "permissions" : ["storage","tabs"],
+    "host_permissions" : ["http://*/*","https://*/*"],
+    "content_scripts":[
+        {
+            "matches": ["http://*/*","https://*/*"],
+            "js": ["src/content.jsx"]
+        }
+    ],
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": {
+            "32": "icon32.png"
+        },
+        "default_title": "Rehan"
+    },
+    "manifest_version":3
+}
